@@ -1906,6 +1906,23 @@ Ti.UI = {
 		return c;
 	},
 
+
+	/**
+	 * @tiapi(property=true,name=UI.CAPITALIZE_NONE,since=0.9) No capitalization on text.
+	 */
+    CAPITALIZE_NONE: 0,
+	/**
+	 * @tiapi(property=true,name=UI.CAPITALIZE_CHARACTERS,since=0.9) Capitalization on all characters.
+	 */
+    CAPITALIZE_CHARACTERS: 1,
+	/**
+	 * @tiapi(property=true,name=UI.CAPITALIZE_SENTENCES,since=0.9) Capitalization on first word in a sentence.
+	 */
+    CAPITALIZE_SENTENCES: 2,
+	/**
+	 * @tiapi(property=true,name=UI.CAPITALIZE_WORDS,since=0.9) Capitalization on first letter of every word.
+	 */
+    CAPITALIZE_WORDS: 3,
 	/**
 	 * @tiapi(property=true,name=UI.RETURNKEY_GO,since=0.6) Displays the Go button.
 	 */

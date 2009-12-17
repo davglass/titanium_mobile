@@ -242,7 +242,7 @@ public class TitaniumTextField extends TitaniumBaseNativeControl
 			tv.setTransformationMethod(PasswordTransformationMethod.getInstance());
 		}
 
-		control.isFocusable();
+        control.isFocusable();
 		control.setId(100);
 	}
 
