@@ -636,11 +636,13 @@ class Builder(object):
 					if install:
 						self.wait_for_device('d')
 						print "[INFO] Installing application on emulator"
-						cmd += ['-d', 'install', '-r', app_apk]
+						#cmd += ['-d', 'install', '-r', app_apk]
+						cmd += ['-d', 'install', app_apk]
 					else:
 						self.wait_for_device('e')
 						print "[INFO] Installing application on device"
-						cmd += ['-e', 'install', '-r', app_apk]
+						#cmd += ['-e', 'install', '-r', app_apk]
+						cmd += ['-e', 'install', app_apk]
 					if run.run(cmd)==None:
 						launch_failed = True
 					elif not install:
