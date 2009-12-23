@@ -640,6 +640,8 @@ class Builder(object):
 						cmd += ['-d', 'install', app_apk]
 					else:
 						self.wait_for_device('e')
+						print "[INFO] Uninstalling application first"
+						run.run([self.adb, '-e', 'uninstall', self.app_id])
 						print "[INFO] Installing application on device"
 						#cmd += ['-e', 'install', '-r', app_apk]
 						cmd += ['-e', 'install', app_apk]
